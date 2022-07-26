@@ -9,6 +9,8 @@ class Tag extends Model
 {
     use Sluggable;
 
+    protected $guarded = [];
+
     public function posts(){
         return $this->belongsToMany('App\Post');
     }
@@ -16,8 +18,10 @@ class Tag extends Model
     public function sluggable(): array
     {
         return [
-            'source' => 'name',
-            'onUpdate' => true,
+            'slug' => [
+                'source' => 'name',
+                'onUpdate' => true,
+            ]
         ];
     }
 }

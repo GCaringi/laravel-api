@@ -9,6 +9,8 @@ class Category extends Model
 {
     use Sluggable;
 
+    protected $guarded = [];
+
     public function posts(){
         return $this->hasMany('App\Post');
     }
