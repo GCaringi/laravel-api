@@ -11,7 +11,7 @@ class Post extends Model
     use Sluggable;
 
     //Mass Assignement
-    protected $guarded = [];
+    protected $guarded = ['tags'];
 
     public function category(){
         return $this->belongsTo('App\Category');
