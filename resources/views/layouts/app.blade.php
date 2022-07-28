@@ -51,7 +51,7 @@
                             @endif
                         @else
                             <li class="nav-item ml-2">
-                                <a href = "#">Categories</a>
+                                <a href = "{{route('admin.categories.index')}}">Categories</a>
                             </li>
                             <li class="nav-item ml-2">
                                 <a href = "{{route('admin.tags.index')}}">Tags</a>

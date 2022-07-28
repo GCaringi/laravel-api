@@ -4,8 +4,8 @@
   <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1>Create new tag</h1>
-            <form action="{{route('admin.tags.store')}}" method="POST">
+            <h1>Create new category</h1>
+            <form action="{{route('admin.categories.store')}}" method="POST">
                 @csrf
                 <div class="form-group">
                     <label for="name">Name</label>
